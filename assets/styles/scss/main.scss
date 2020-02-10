@@ -1,0 +1,130 @@
+//=====FONTS
+@font-face {
+    font-family: 'primary-font';
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'heading-font';
+    src: url('../../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'desc-font';
+    src: url('../../fonts/Poppins-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'thin-font';
+    src: url('../../fonts/Poppins-Thin.ttf');
+}
+
+
+//===COLORS====
+$Purple : #8255fd;
+$DarkBlue : #020842;
+$LightBlue: #42b2f0;
+$Gradient : linear-gradient(to right, #7a0fff 0%, #46bdf4 100%);
+
+body{
+    background: $DarkBlue;
+}
+//BTN
+.btn {
+    cursor: pointer;
+    font-family: heading-font;
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 600;
+    padding: 0 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    min-width: 140px;
+    //max-width: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.cta-btn {
+    background-image: $Gradient;
+    transition: all .5s;
+    
+
+    &:hover {
+        background: $Purple;
+    }
+}
+
+
+//SOCIALS
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    .social{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        transition: all 0.3s;
+        i{
+            color: #3c3c3c;
+        }
+        &:hover{
+            background: $Purple;
+            i{
+                color: #fff;   
+            }
+            
+        }
+    }
+}
+
+
+//TITLE
+.main-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: heading-font;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3rem;
+}
+
+
+//its for sticky footer
+.menu-banner-container {
+    height: 90vh;
+    background: url('../../images/background/header-shape-lobelia.png'), linear-gradient(to top left, #000537 0%, #0a1992 100%);
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+@media (max-width: 576px) {
+    .menu-banner-container {
+        height: auto;
+    }
+}
+
+//=====IMPORTS
+@import './reset';
+@import './navbar';
+@import './banner';
+@import './about';
+@import './features';
+@import './time-line';
+@import './statistics';
