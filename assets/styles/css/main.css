@@ -678,6 +678,7 @@ nav .container .main-menu .item {
 #statistics {
   padding-top: 3rem;
   background: #00031d;
+  padding-bottom: 5rem;
 }
 
 .chart-card {
@@ -716,6 +717,87 @@ nav .container .main-menu .item {
 }
 .chart-legends li:last-child {
   margin-bottom: 0px;
+}
+
+#FAQ .container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.faq {
+  height: auto;
+  margin-bottom: 1rem;
+}
+.faq .faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 50px;
+  box-sizing: border-box;
+  background: #1d252c;
+  border-radius: 1rem 1rem 0px 0px;
+}
+.faq .faq-header .faq-title {
+  color: #fff;
+  font-family: heading-font;
+  margin: 0px;
+  font-size: 1rem;
+}
+.faq .faq-header .faq-icon {
+  color: #fff;
+}
+.faq .faq-body {
+  display: none;
+  font-family: desc-font;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  font-size: 0.8rem;
+  background: #333C42;
+  border-radius: 0px 0px 1rem 1rem;
+}
+
+#subscribe {
+  padding: 3rem 0px;
+}
+
+#subscribe-form {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin: 0 auto;
+  background: #1d252c;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 100px;
+}
+#subscribe-form .email-input {
+  font-family: desc-font;
+  background-color: transparent;
+  color: #fff;
+  flex-grow: 1;
+  border: 0px;
+  padding: 0px 1rem;
+  flex-grow: 1;
+}
+#subscribe-form .subscribe-submit {
+  width: 100px;
+}
+
+.subscribe-socials {
+  width: 20%;
+  margin: 1rem auto;
+}
+
+@media (max-width: 576px) {
+  #subscribe-form {
+    width: 100%;
+  }
+
+  .subscribe-socials {
+    width: 215px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

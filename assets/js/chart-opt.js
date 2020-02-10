@@ -16,7 +16,7 @@
 //                        'rgba(54, 162, 235, 1)',
 //                        'rgba(255, 206, 86, 1)',
 //                    ],
-                    borderWidth: 1,
+                    borderWidth: 0,
                 }]
             },
             options: {
