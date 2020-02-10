@@ -719,6 +719,11 @@ nav .container .main-menu .item {
   margin-bottom: 0px;
 }
 
+@media (max-width: 576px) {
+  .chart-card {
+    width: auto;
+  }
+}
 #FAQ .container {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -782,7 +787,7 @@ nav .container .main-menu .item {
   flex-grow: 1;
 }
 #subscribe-form .subscribe-submit {
-  width: 100px;
+  min-width: 120px !important;
 }
 
 .subscribe-socials {
