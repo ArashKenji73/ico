@@ -18,6 +18,7 @@ $(".faq .faq-header").on('click', function (e) {
         //alert('remove all active class and add it to this');
         $(".faq").removeClass('faq-active');
         $('.faq-body').slideUp();
+        $('.faq .faq-header .faq-icon').html('<i class="fa fa-plus"></i>');
         
         $(e.target).parent().addClass('faq-active');
         
