@@ -1,22 +1,15 @@
-#FAQ .container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+#FAQ {
+    background: $Section-BG-Odd;
+    .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
-
-
-
-.faq {
-    
-    
-//    &.faq-active{
-//        .faq-body {
-//            display: block;
-//        }
-//    }
+#FAQ .faq {
     height: auto;
     margin-bottom: 1rem;
-    
+
     .faq-header {
         display: flex;
         align-items: center;

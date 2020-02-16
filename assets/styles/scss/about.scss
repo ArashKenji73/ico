@@ -1,6 +1,6 @@
 #about {
     overflow-x: hidden;
-    background: $DarkBlue;
+    background: $Section-BG-Odd;
     .container {
         height: auto;
         padding: 2rem 0px;
@@ -10,14 +10,29 @@
 
 
 .about-block {
-    padding: 5rem 0px;
+    padding: 2rem 0px;
     display: flex;
     justify-content: space-between;
     min-height: 300px;
     //background: blue;
     
+    
+    &.even{
+        .info{order: 1}
+        
+        .image{order: 2;}
+        
+    }
+    
+    &.odd{
+        .info{order: 2}
+        
+        .image{order: 1;}
+    }
+    
     .info{
         width: 45%;
+        margin-top: 3%;
         //padding-right: 3rem;
         //background: #ddd;
         .title{

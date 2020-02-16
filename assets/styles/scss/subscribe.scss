@@ -41,6 +41,11 @@
 @media (max-width: 576px) {
     #subscribe-form {
         width: 100%;
+
+        .subscribe-submit {
+            padding: 0;
+            min-width: 90px !important;
+        }
     }
 
     .subscribe-socials {

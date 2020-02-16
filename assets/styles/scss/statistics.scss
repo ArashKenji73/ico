@@ -1,6 +1,6 @@
 #statistics {
     padding-top: 3rem;
-    background: #00031d;
+    background: $Section-BG-Even;
     padding-bottom: 5rem;
 }
 
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    background: #0e102f;
+    background: #2c1456;
     border-radius: 1rem;
     width: 300px;
     margin: 0 auto;
@@ -30,28 +30,32 @@
     padding: 0px;
     margin: 0px;
     width: 100%;
+
     li {
         font-family: desc-font;
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
         color: #fff;
+
         .span-test {
             width: 30px;
             height: 30px;
             margin-right: 1rem;
             border-radius: 0.25rem;
         }
-        
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0px;
         }
     }
 }
 
 
+
 @media (max-width: 576px) {
     .chart-card {
+        //background: red;
         width: auto;
     }
 }

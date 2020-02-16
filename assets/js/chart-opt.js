@@ -41,7 +41,7 @@
                 legendCallback: function (chart) {
                     var sum = 0;
                     var text = [];
-                    for (var i = 0; i < chart.data.datasets[0].data.length; i++) {
+                    for (let i = 0; i < chart.data.datasets[0].data.length; i++) {
                         sum += chart.data.datasets[0].data[i];
                     }
                     
@@ -50,7 +50,7 @@
 
                     text += `<ul class="chart-legends">`;
 
-                    for (var i = 0; i < chart.data.datasets[0].data.length; i++) {
+                    for (let i = 0; i < chart.data.datasets[0].data.length; i++) {
 
                         text += `<li> <div class="span-test" id="item-${i}" style="background-color:${chart.data.datasets[0].backgroundColor[i]}"></div>${chart.data.labels[i]} : ${chart.data.datasets[0].data[i]/sum*100+' %'} 
                         </li>`;

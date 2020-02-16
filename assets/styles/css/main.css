@@ -15,7 +15,7 @@
   src: url("../../fonts/Poppins-Thin.ttf");
 }
 body {
-  background: #020842;
+  background: #210d3e;
 }
 
 .btn {
@@ -82,7 +82,7 @@ body {
 
 .menu-banner-container {
   height: 90vh;
-  background: url("../../images/background/header-shape-lobelia.png"), linear-gradient(to top left, #000537 0%, #0a1992 100%);
+  background: linear-gradient(-30deg, #91039f 0%, #052157 100%);
   background-origin: content-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@ body {
 
 @media (max-width: 576px) {
   .menu-banner-container {
-    height: auto;
+    height: 100vh;
   }
 }
 body {
@@ -139,7 +139,7 @@ body {
 }
 
 nav {
-  background: #071162;
+  background: #052157;
   display: flex;
   align-items: center;
   width: 100%;
@@ -319,7 +319,7 @@ nav .container .main-menu .item {
 }
 #about {
   overflow-x: hidden;
-  background: #020842;
+  background: #2c1350;
 }
 #about .container {
   height: auto;
@@ -327,13 +327,26 @@ nav .container .main-menu .item {
 }
 
 .about-block {
-  padding: 5rem 0px;
+  padding: 2rem 0px;
   display: flex;
   justify-content: space-between;
   min-height: 300px;
 }
+.about-block.even .info {
+  order: 1;
+}
+.about-block.even .image {
+  order: 2;
+}
+.about-block.odd .info {
+  order: 2;
+}
+.about-block.odd .image {
+  order: 1;
+}
 .about-block .info {
   width: 45%;
+  margin-top: 3%;
 }
 .about-block .info .title {
   color: #fff;
@@ -380,7 +393,7 @@ nav .container .main-menu .item {
   }
 }
 #features {
-  background: #00031d;
+  background: #210d3e;
 }
 #features .container {
   padding: 3rem 0px;
@@ -401,7 +414,7 @@ nav .container .main-menu .item {
   align-items: center;
   width: 30%;
   min-height: 300px;
-  background: #08157a;
+  background: #2c1456;
   padding: 40px 30px 40px;
   box-sizing: border-box;
   border-radius: 1rem;
@@ -456,7 +469,7 @@ nav .container .main-menu .item {
   }
 }
 #timeline {
-  background: #020842;
+  background: #2c1350;
   padding: 3rem 0px;
 }
 
@@ -677,7 +690,7 @@ nav .container .main-menu .item {
 }
 #statistics {
   padding-top: 3rem;
-  background: #00031d;
+  background: #210d3e;
   padding-bottom: 5rem;
 }
 
@@ -687,7 +700,7 @@ nav .container .main-menu .item {
   align-items: center;
   justify-content: center;
   padding: 3rem;
-  background: #0e102f;
+  background: #2c1456;
   border-radius: 1rem;
   width: 300px;
   margin: 0 auto;
@@ -724,16 +737,19 @@ nav .container .main-menu .item {
     width: auto;
   }
 }
+#FAQ {
+  background: #2c1350;
+}
 #FAQ .container {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.faq {
+#FAQ .faq {
   height: auto;
   margin-bottom: 1rem;
 }
-.faq .faq-header {
+#FAQ .faq .faq-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -743,16 +759,16 @@ nav .container .main-menu .item {
   background: #1d252c;
   border-radius: 1rem 1rem 0px 0px;
 }
-.faq .faq-header .faq-title {
+#FAQ .faq .faq-header .faq-title {
   color: #fff;
   font-family: heading-font;
   margin: 0px;
   font-size: 1rem;
 }
-.faq .faq-header .faq-icon {
+#FAQ .faq .faq-header .faq-icon {
   color: #fff;
 }
-.faq .faq-body {
+#FAQ .faq .faq-body {
   display: none;
   font-family: desc-font;
   color: #fff;
@@ -798,6 +814,10 @@ nav .container .main-menu .item {
 @media (max-width: 576px) {
   #subscribe-form {
     width: 100%;
+  }
+  #subscribe-form .subscribe-submit {
+    padding: 0;
+    min-width: 90px !important;
   }
 
   .subscribe-socials {
